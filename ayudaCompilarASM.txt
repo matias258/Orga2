@@ -1,0 +1,18 @@
+Para ejecutar algo en asm:
+
+- crear el archivo .asm
+
+- Una vez creado, Ensamblarlo: 
+    nasm -f elf64 -g -F DWARF nombredelarchivo.asm
+  
+- Esto nos da un archivo .o (archivo objeto)
+
+- Luego lo linkeamos: 
+    ld -o nombredelarchivo nombredelarchivo.asm
+
+
+- Nos devuelve un archivo ejecutable
+
+
+- La manera de Ejecutarlo va a ser escribiendo : 
+    ./nombredelarchivo
